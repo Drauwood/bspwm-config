@@ -56,7 +56,7 @@ MakeExecutable() {
 HelloScreen
 UpdateReposytoryesDB
 
-#InstallXorg
+InstallXorg
 InstallMainPackeges
 InstallFont
 InstallOrUpdateBaseBasedevel
