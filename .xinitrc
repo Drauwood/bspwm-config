@@ -1,6 +1,6 @@
 #!/bin/sh
 
-feh --bg-max --randomize ~/.config/bspwm/Wallpaper/* &
+feh --bg-scale ~/.config/bspwm/Wallpaper/001.jpg
 setxkbmap -option grp:alt_shift_toggle us,ru
 picom -f &
 numlockx on &
