@@ -1,7 +1,7 @@
 #!/bin/sh
 
-setxkbmap -option grp:alt_shift_toggle us,ru    # Смена языка. Такой подход не совсем "правильный"
-picom -f &                                      # Запуск picom
-xsetroot -cursor_name left_ptr                  # Установка стандартного курсора
+setxkbmap -option grp:alt_shift_toggle us,ru
+picom -f &
+xsetroot -cursor_name left_ptr
 exec sxhkd &
-exec bspwm                                      # Запуск bspwm
+exec bspwm
