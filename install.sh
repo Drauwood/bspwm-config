@@ -2,7 +2,7 @@
 
 IsRoot(){
     if [[ $EUID -ne 0 ]]; then
-        echo "This script must be run as root"
+        echo ":: This script must be run as root"
         exit 1
     fi
 }
@@ -15,27 +15,27 @@ HelloScreen(){
 }
 
 UpdateReposytoryesDB() {
-    echo "Updating system..."
-    sudo pacman --noconfirm -Sy
+    echo ":: Updating system..."
+    sudo pacman --noconfirm -Syu
 }
 
 InstallXorg() {
-    echo "Install xorg..."
+    echo ":: Install xorg..."
     sudo pacman --noconfirm -S xorg-server xorg-xinit xorg-xset xorg-xsetroot xorg-xrandr xorg-xrdb
 }
 
 InstallMainPackeges() {
-    echo "Install Programs..."
+    echo ":: Install programs..."
     sudo pacman --noconfirm -S bspwm sxhkd polybar firefox neovim alacritty mc cmake smplayer cmus btop numlockx udiskie pamixer grim slurp picom feh zip unzip
 }
 
 InstallFont() {
-	echo "Install Fonts..."
+	echo ":: Install fonts..."
 	sudo pacman --noconfirm -S ttf-liberation ttf-dejavu opendesktop-fonts ttf-bitstream-vera ttf-arphic-ukai ttf-arphic-uming ttf-hanazono ttf-jetbrains-mono-nerd
 }
 
 InstallOrUpdateBaseBasedevel() {
-    echo "Update or install base, base-devel packeges..."
+    echo ":: Update or install base, base-devel packeges..."
     sudo pacman --noconfirm -S base base-devel
 }
 
@@ -64,5 +64,5 @@ InstallOrUpdateBaseBasedevel
 CopyConfigs
 MakeExecutable
 
-echo "Volume 100%..."
+echo ":: Volume 100%..."
 pamixer --set-volume 100
