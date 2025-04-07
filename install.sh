@@ -1,32 +1,32 @@
 #!/bin/bash
 
-IsRoot(){
-    if [[ $EUID -ne 0 ]]; then
-        echo ":: This script must be run as root"
-        exit 1
-    fi
+IsRoot() {
+	if [[ $EUID -ne 0 ]]; then
+		echo ":: This script must be run as root"
+		exit 1
+	fi
 }
 
-HelloScreen(){
-    echo '==========================================================='
-    echo 'bspwm & sxhkd install script'
-    echo 'Author: https://github.com/Drauwood'
-    echo '==========================================================='
+HelloScreen() {
+	echo '==========================================================='
+	echo 'bspwm & sxhkd install script'
+	echo 'Author: https://github.com/Drauwood'
+	echo '==========================================================='
 }
 
 UpdateReposytoryesDB() {
-    echo ":: Updating system..."
-    sudo pacman --noconfirm -Syu
+	echo ":: Updating system..."
+	sudo pacman --noconfirm -Syu
 }
 
 InstallXorg() {
-    echo ":: Install xorg..."
-    sudo pacman --noconfirm -S xorg-server xorg-xinit xorg-xset xorg-xsetroot xorg-xrandr xorg-xrdb
+	echo ":: Install xorg..."
+	sudo pacman --noconfirm -S xorg-server xorg-xinit xorg-xset xorg-xsetroot xorg-xrandr xorg-xrdb
 }
 
 InstallMainPackeges() {
-    echo ":: Install programs..."
-    sudo pacman --noconfirm -S bspwm sxhkd polybar firefox neovim alacritty mc cmake smplayer cmus btop numlockx udiskie pamixer grim slurp picom feh zip unzip
+	echo ":: Install programs..."
+	sudo pacman --noconfirm -S bspwm sxhkd polybar firefox neovim alacritty mc cmake smplayer cmus btop numlockx udiskie pamixer grim slurp picom feh zip unzip
 }
 
 InstallFont() {
@@ -35,21 +35,21 @@ InstallFont() {
 }
 
 InstallOrUpdateBaseBasedevel() {
-    echo ":: Update or install base, base-devel packeges..."
-    sudo pacman --noconfirm -S base base-devel
+	echo ":: Update or install base, base-devel packeges..."
+	sudo pacman --noconfirm -S base base-devel
 }
 
 CopyConfigs() {
-    cp -rf .config ~/
-    cp -rf .bash_profile ~/
-    cp -rf .bashrc ~/
-    cp -rf .xinitrc ~/
+	cp -rf .config ~/
+	cp -rf .bash_profile ~/
+	cp -rf .bashrc ~/
+	cp -rf .xinitrc ~/
 }
 
 MakeExecutable() {
-    #chmod +x ~/.config/bspwm/bspwmrc
-    chmod +x ~/.config/polybar/launch.sh
-    #chmod +x ~/.config/polybar/launch_additional.sh
+	#chmod +x ~/.config/bspwm/bspwmrc
+	chmod +x ~/.config/polybar/launch.sh
+	#chmod +x ~/.config/polybar/launch_additional.sh
 }
 
 #IsRoot

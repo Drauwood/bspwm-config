@@ -1,5 +1,13 @@
-require("config.config")
-require("config.keymappings")
-require("config.lazy")
+-- Basic
+require('core.plugins')
+require('core.mappings')
+require('core.colors')
+require('core.configs')
 
-require("plugins.neotree")
+-- Plugins
+require('plugins.neotree')
+require('plugins.treesitter')
+require('plugins.telescope')
+require('plugins.buffline')
+require('plugins.lualine')
+require('plugins.onedark')
