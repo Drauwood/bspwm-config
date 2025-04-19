@@ -66,7 +66,7 @@ InstallXorg
 InstallMainPackeges
 InstallFont
 InstallOrUpdateBaseBasedevel
-InstallLogin
+#InstallLogin
 
 CopyConfigs
 MakeExecutable
