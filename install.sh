@@ -39,6 +39,12 @@ InstallOrUpdateBaseBasedevel() {
 	sudo pacman --noconfirm -S base base-devel
 }
 
+InstallLogin() {
+	echo ":: Install GDM ..."
+	sudo pacman --noconfirm -S gdm
+	sudo systemctl enable gdm
+}
+
 CopyConfigs() {
 	cp -rf .config ~/
 	cp -rf .bash_profile ~/
@@ -60,6 +66,7 @@ InstallXorg
 InstallMainPackeges
 InstallFont
 InstallOrUpdateBaseBasedevel
+InstallLogin
 
 CopyConfigs
 MakeExecutable
