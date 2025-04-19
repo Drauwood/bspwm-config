@@ -26,6 +26,7 @@ require("lazy").setup({
         }       
     },
     { 'nvim-treesitter/nvim-treesitter' },
+    { 'neovim/nvim-lspconfig' },
     { 'navarasu/onedark.nvim' },
     { 
         'nvim-telescope/telescope.nvim',
