@@ -16,9 +16,9 @@ vim.g.maplocalleader = "\\" -- Same for `maplocalleader`
 
 require("lazy").setup({
 	{ 'jiangmiao/auto-pairs' },
+    { 'neoclide/coc.nvim' },
     { 'nvim-neo-tree/neo-tree.nvim' },
     {
-	{ 'neoclide/coc.nvim' },
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
         dependencies = {
