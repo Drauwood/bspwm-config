@@ -26,7 +26,7 @@ InstallXorg() {
 
 InstallMainPackeges() {
 	echo ":: Install programs..."
-	sudo pacman --noconfirm -S bspwm sxhkd polybar firefox neovim alacritty mc cmake smplayer cmus btop numlockx udiskie pamixer picom feh zip unzip nodejs
+	sudo pacman --noconfirm -S bspwm sxhkd polybar firefox neovim alacritty mc cmake smplayer cmus btop numlockx udiskie pamixer picom feh zip unzip nodejs npm
 }
 
 InstallFont() {
