@@ -21,7 +21,7 @@ UpdateReposytoryesDB() {
 
 InstallXorg() {
 	echo ":: Install xorg..."
-	sudo pacman --noconfirm -S xorg-server xorg-xinit xorg-xset xorg-xsetroot xorg-xrandr xorg-xrdb
+	sudo pacman --noconfirm -S xorg-server xorg-xinit xorg-xset xorg-xsetroot xorg-xrandr xorg-xrdb xorg-server-devel
 }
 
 InstallMainPackeges() {
@@ -37,6 +37,11 @@ InstallFont() {
 InstallOrUpdateBaseBasedevel() {
 	echo ":: Update or install base, base-devel packeges..."
 	sudo pacman --noconfirm -S base base-devel
+}
+
+InstallLib() {
+	echo ":: Update or install lib's packeges..."
+	sudo pacman --noconfirm -S libxcursor libxrandr libxinerama libxi libxkbcommon
 }
 
 InstallLogin() {
@@ -66,6 +71,7 @@ InstallXorg
 InstallMainPackeges
 InstallFont
 InstallOrUpdateBaseBasedevel
+InstallLib
 #InstallLogin
 
 CopyConfigs
