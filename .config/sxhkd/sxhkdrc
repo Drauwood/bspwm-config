@@ -6,6 +6,9 @@
 super + Return
 	alacritty
 
+super + F12
+    transmission-gtk
+
 Pause
     firefox
 
