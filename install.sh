@@ -71,7 +71,7 @@ InstallXorg
 InstallMainPackeges
 InstallFont
 InstallOrUpdateBaseBasedevel
-InstallLib
+#InstallLib
 #InstallLogin
 
 CopyConfigs
