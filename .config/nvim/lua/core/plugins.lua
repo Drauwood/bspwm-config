@@ -27,7 +27,17 @@ require("lazy").setup({
         }       
     },
     { 'nvim-treesitter/nvim-treesitter' },
-    { 'navarasu/onedark.nvim' },
+    -- { 'navarasu/onedark.nvim' },
+    {
+        "navarasu/onedark.nvim",
+        opts = {
+            transparent = true,
+            styles = {
+                sidebars = "transparent",
+                floats = "transparent",
+            },
+        },
+    },
     { 
         'nvim-telescope/telescope.nvim',
         tag = '0.1.6',
