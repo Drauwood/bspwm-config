@@ -27,7 +27,6 @@ require("lazy").setup({
         }       
     },
     { 'nvim-treesitter/nvim-treesitter' },
-    -- { 'navarasu/onedark.nvim' },
     {
         "navarasu/onedark.nvim",
         opts = {

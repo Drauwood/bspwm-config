@@ -9,8 +9,8 @@ IsRoot() {
 
 HelloScreen() {
 	echo '==========================================================='
-	echo 'bspwm & sxhkd install script'
-	echo 'Author: https://github.com/Drauwood'
+	echo ':: bspwm & sxhkd install script'
+	echo ':: Author: https://github.com/Drauwood'
 	echo '==========================================================='
 }
 
