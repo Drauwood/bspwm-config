@@ -51,6 +51,8 @@ fi
 
 setxkbmap -option grp:alt_shift_toggle us,ru
 feh --bg-scale ~/.config/Wallpaper/001.jpg &
+udiskie --no-automount &
+numlockx &
 picom -f &
 xsetroot -cursor_name left_ptr
 pamixer --set-volume 100
