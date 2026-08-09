@@ -25,4 +25,7 @@ bspc rule -a Screenkey manage=off
 bspc config focus_follows_pointer true
 bspc config pionter_modifier super
 
+# Random Wallpaper Script
+sh $HOME/.config/bin/random_wallpaper
+
 $HOME/.config/polybar/launch.sh
