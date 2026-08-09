@@ -5,13 +5,34 @@
 # terminal emulator
 super + Return
 	alacritty
+#
+super + F10
+    Telegram
+
+super + F11
+    transmission-gtk
+
+super + F12
+    steam
+
+super + Pause
+    firefox
+
+super + shift + Pause
+    firefox --private-window
+
+super + Escape
+    poweroff
+
+super + Insert
+    reboot
 
 # program launcher
 super + d
 	dmenu_run
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + Home
 	pkill -USR1 -x sxhkd
 
 #
