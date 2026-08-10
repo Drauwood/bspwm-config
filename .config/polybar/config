@@ -21,7 +21,6 @@ background = #282C34
 background-alt = #373B41
 foreground = #C5C8C6
 primary = #B4BEFE
-;#F0C674
 secondary = #8ABEB7
 alert = #A54242
 disabled = #707880
@@ -51,7 +50,7 @@ module-margin = 1
 separator = |
 separator-foreground = ${colors.disabled}
 
-font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;
+font-0 = JetBrainsMono Nerd Font;2
 
 modules-left = xworkspaces xwindow
 modules-right = cpu memory pulseaudio xkeyboard date systray
@@ -78,8 +77,8 @@ wm-restack = bspwm
 [module/systray]
 type = internal/tray
 
-format-margin = 4pt
-tray-spacing = 4pt
+format-margin = 1pt
+tray-spacing = 1pt
 
 [module/xworkspaces]
 type = internal/xworkspaces
