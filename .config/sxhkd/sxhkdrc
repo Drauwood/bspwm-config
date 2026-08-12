@@ -6,8 +6,8 @@
 super + Return
 	alacritty
 #
-super + w
-	sh $HOME/.config/bin/random_wallpaper.sh
+#super + w
+#	sh $HOME/.config/bin/random_wallpaper.sh
 
 super + F10
     Telegram
