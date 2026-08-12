@@ -128,7 +128,7 @@ set_prompt () {
     fi
     # reset colors; add newline and $ sign
     #PS1+="$Reset\n≽≽≽ "
-    PS1+="$Reset\n > "
+    PS1+="$Reset\n-> "
 }
 
 # set variable identifying the chroot you work in (used in the prompt below)
