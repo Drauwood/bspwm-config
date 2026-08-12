@@ -127,8 +127,8 @@ set_prompt () {
         PS1+=$GIT_NOT_FOUND
     fi
     # reset colors; add newline and $ sign
-    PS1+="$Reset\n≽≽≽ "
-    #PS1+="$Reset\n>>> "
+    #PS1+="$Reset\n≽≽≽ "
+    PS1+="$Reset\n > "
 }
 
 # set variable identifying the chroot you work in (used in the prompt below)
