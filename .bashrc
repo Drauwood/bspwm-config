@@ -5,9 +5,9 @@ alias u='sudo pacman -Syu'
 alias ll='ls -lha'
 
 alias a='lsblk'
-alias um='udiskie-mount '
-alias uu='udiskie-umount '
-alias uud='udiskie-umount --detach '
+alias mo='udiskie-mount '
+alias unmo='udiskie-umount '
+alias unmod='udiskie-umount --detach '
 
 alias add='git add .'
 alias com='git commit -m '
