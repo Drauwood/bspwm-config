@@ -6,7 +6,7 @@ sudo pacman --noconfirm -S bspwm sxhkd polybar picom rofi firefox neovim alacrit
 
 sudo pacman --noconfirm -S ttf-liberation ttf-dejavu opendesktop-fonts ttf-bitstream-vera ttf-arphic-ukai ttf-arphic-uming ttf-jetbrains-mono-nerd
 
-sudo pacman --noconfirm -S base-devel
+sudo pacman --noconfirm -S base-devel qt6-base
 
 cp -rf .config ~/
 cp -rf .bash_profile ~/
