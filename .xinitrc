@@ -50,7 +50,7 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 fi
 
 setxkbmap -option grp:alt_shift_toggle us,ru
-feh --bg-scale ~/.config/Wallpaper/001.jpg &
+feh --bg-scale ~/.config/Wallpaper/009.jpg &
 udiskie --no-automount &
 numlockx &
 picom -f &
