@@ -13,6 +13,9 @@ alias add='git add .'
 alias com='git commit -m '
 alias push='git push'
 
+alias cn='cmake -S . -B build'
+alias cb='cmake --build build'
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -128,7 +131,7 @@ set_prompt () {
     fi
     # reset colors; add newline and $ sign
     #PS1+="$Reset\n≽≽≽ "
-    PS1+="$Reset\n-> "
+    PS1+="$Reset\n>>> "
 }
 
 # set variable identifying the chroot you work in (used in the prompt below)
