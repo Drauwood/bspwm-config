@@ -68,7 +68,7 @@ set_prompt () {
 
 
     # Add date
-    PS1="\t "
+    PS1=" "
 
 
     # Add a bright white exit status for the last command
@@ -131,7 +131,8 @@ set_prompt () {
     fi
     # reset colors; add newline and $ sign
     #PS1+="$Reset\n≽≽≽ "
-    PS1+="$Reset\n>>> "
+    #PS1+="$Reset\n>>> "
+    PS1+="$Reset\n >>> "
 }
 
 # set variable identifying the chroot you work in (used in the prompt below)
