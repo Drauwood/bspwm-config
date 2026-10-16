@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9
+bspc monitor -d 1 2 3 4 5
 
 bspc config border_width         1
 bspc config window_gap           5
@@ -12,8 +12,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config paddingless_monocle  true
 
-bspc config normal_border_color "#0A1F32"
-bspc config active_border_color "#2D384A"
+bspc config normal_border_color  "#2D384A"
+bspc config active_border_color  "#2D384A"
 bspc config focused_border_color "#B4BEFE"
 
 bspc rule -a feh state=floating
