@@ -54,6 +54,8 @@ feh --bg-scale ~/.config/Wallpaper/009.jpg &
 udiskie --no-automount &
 numlockx &
 picom -f &
+xset s off &
+xset -dpms &
 xsetroot -cursor_name left_ptr
-pamixer --set-volume 100
+pamixer --set-volume 100 &
 exec bspwm
