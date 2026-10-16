@@ -13,7 +13,14 @@ alias u='sudo pacman -Syu'
 alias a='lsblk'
 alias c='clear'
 
-alias ls='ls -la --color=auto'
+alias add='git add .'
+alias com='git commit -m '
+alias push='git push'
+
+alias cn='cmake -S . -B build'
+alias cb='cmake --build build'
+
+alias ls='ls -lha --color=auto'
 alias grep='grep --color=auto'
 
 # PS1='[\t] \w\n> '
