@@ -13,6 +13,9 @@ alias u='sudo pacman -Syu'
 alias a='lsblk'
 alias c='clear'
 
+alias um='udiskie-mount '
+alias uum='udiskie-umount --detach '
+
 alias add='git add .'
 alias com='git commit -m '
 alias push='git push'
