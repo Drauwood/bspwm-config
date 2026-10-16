@@ -8,6 +8,8 @@ sudo pacman --noconfirm -S ttf-liberation ttf-dejavu opendesktop-fonts ttf-bitst
 
 sudo pacman --noconfirm -S base-devel
 
+cp ~/.bashrc ~/.bashrc.backup
+
 cp -rf .config ~/
 cp -rf .bash_profile ~/
 cp -rf .bashrc ~/
