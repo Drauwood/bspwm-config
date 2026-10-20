@@ -23,6 +23,9 @@ alias push='git push'
 alias cn='cmake -S . -B build'
 alias cb='cmake --build build'
 
+alias mm='make && make run'
+alias mi='make install'
+
 alias ls='ls -lha --color=auto'
 alias grep='grep --color=auto'
 
