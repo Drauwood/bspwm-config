@@ -9,15 +9,6 @@ super + Return
 #super + w
 #	sh $HOME/.config/bin/random_wallpaper.sh
 
-super + F10
-    Telegram
-
-super + F11
-    transmission-gtk
-
-super + F12
-    steam
-
 Pause
     firefox
 
