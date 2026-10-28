@@ -22,6 +22,7 @@ alias com='git commit -m '
 alias push='git push'
 
 alias cn='cmake -S . -B build'
+alias cnd='cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug'
 alias cb='cmake --build build'
 
 alias mm='make'
