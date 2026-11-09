@@ -19,15 +19,11 @@ alias uum='udiskie-umount --detach '
 
 alias add='git add .'
 alias com='git commit -m '
-alias push='git push'
+alias push='git push -u origin '
 
 alias cn='cmake -S . -B build'
 alias cnd='cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug'
 alias cb='cmake --build build'
-
-alias mm='make'
-alias mr='make && make run'
-alias mi='make install'
 
 alias ls='ls -lha --color=auto'
 alias grep='grep --color=auto'
