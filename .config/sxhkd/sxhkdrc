@@ -9,6 +9,9 @@ super + Return
 #super + w
 #	sh $HOME/.config/bin/random_wallpaper.sh
 
+Print
+    flameshot gui
+
 Pause
     firefox
 
